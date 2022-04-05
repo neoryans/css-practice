@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid blueviolet;
+    margin: 60px auto;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(2, 120px);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* auto-fit | auto-fill *|
+    /* grid-template-columns: 1fr 1fr 1fr; 1fr Fractional unit */
+    gap: 15px;
+    grid-auto-rows: 120px;
+    /* place-content: center; */
+}
+
+.box-1 {
+    background-color: rgb(55, 245, 245);
+
+}
+.box-2 {
+    background-color: rgb(0, 47, 255);
+    /* grid-column: 1 / -1; */
+}
+.box-3 {
+    background-color: rgb(81, 255, 0);
+}
+.box-4 {
+    background-color: rgb(255, 81, 0);
+}
+.box-5 {
+    background-color: rgb(255, 0, 98);
+    /* grid-row: 1/2;
+    grid-column: 2/-1; */
+}
+.box-6 {
+    background-color: rgb(255, 251, 0);
+}
