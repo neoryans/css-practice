@@ -1,1 +1,1 @@
-CSS-practice
+CSS Practices
