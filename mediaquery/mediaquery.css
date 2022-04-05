@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 50px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-section {
+  width: 50%;
+  padding: 0 50px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.image-section {
+  width: 50%;
+  padding: 0;
+  text-align: center;
+}
+
+.image-section img {
+  width: 450px;
+}
+
+/* ALWAYS WRITE MEDIA QUERY AT THE BOTTOM OF SCREEM */
+
+/* Desktop and laptop from 1024px onwards */
+@media (min-width: 1024px){
+  .text-section{
+    color: #1d2021;
+    background-color: antiquewhite;
+  }
+}
+/* Tablets and ipad between 768px to 1023px */
+@media (min-width: 769px) and (max-width: 1023px){
+  h1{
+    text-transform: uppercase;
+  }
+  body{
+    background-color: dimgray;
+  }
+}
+
+/* Mobile and smart phones  0 to 768px */
+@media (max-width: 768px){
+  h1{
+    color: cadetblue;
+  }
+  .container{
+    display: block;
+  }
+  .text-section{
+    width: 100%;
+  }
+  .image-section{
+    width: 100%;
+  }
+  .image-section img{
+    padding-top: 15px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* Small phones 0 to 468px */
+@media (max-width: 468px){
+  .image-section img{
+    padding : 15px;
+  }
+  h1{
+    color:orange;
+    font-size: 20px;
+  }
+}

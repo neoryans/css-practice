@@ -1,0 +1,15 @@
+.container {
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container div {
+  width: 100px;
+  line-height: 75px;
+  margin: 10px;
+  text-align: center;
+  font-size: 32px;
+  background-color: blueviolet;
+}
